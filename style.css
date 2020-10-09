@@ -1,0 +1,90 @@
+body {
+	background-color: #5D576B;
+	width: 80wv;
+	min-width: 10em;
+	max-width: 80em;
+	margin: auto;
+}
+
+.header {
+	font-family: 'Zilla Slab', sans-serif;
+	font-variant: small-caps;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 500;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 0.3em;
+}
+
+.header_ghost {
+	height: 3em;
+	padding-top: 1em;
+}
+
+.inputs {
+	width: calc(100% - 1em - 1px);
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	overflow: hidden;
+	overflow: -moz-hidden-unscrollable;
+}
+
+.input {
+	background-color:#fe938c;
+	margin: 0.8em;
+	padding: 1em;
+	display: grid;
+}
+
+.input.found {
+	background-color: #ECDD7B;
+}
+
+.input.ruledOut {
+	background-color: #C43331;
+}
+
+.input_icon {
+	width: 100px;
+	margin: auto;
+}
+
+.input_label {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ghost {
+	color: #F1DEDE;
+	margin: 2em;
+	background: rgba(0,0,0,0.15);
+	padding: 1em;
+	letter-spacing: 0.015em;
+}
+
+h2 {
+	font-size: 2em;
+	margin-top: 0;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-variant: small-caps;
+	
+}
+
+p {
+	font-family: 'Zilla Slab', sans-serif;
+	font-size: 1.05em;
+	/*letter-spacing: 0.04em;*/
+	font-weight: 400;
+	margin: 0.7em;
+}
+
+p:last-of-type {
+	margin-bottom: 0.2em;
+}
