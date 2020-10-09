@@ -17,6 +17,8 @@ The list of ghosts below the input buttons will narrow based on your selections.
 
 Below this, the ghost's description, strength and weakness will be listed — sometimes paraphrased for brevity, or edited to correct grammar (sorry!).
 
+I recommend having it open on a second screen, either another PC monitor or some sort of mobile device. 
+
 ## Why?
 
 I disliked having to:
@@ -33,19 +35,21 @@ The in-game journal also doesn't allow you to rule out pieces of evidence (occas
 
 ## To-do
 
-* Work out why the buttons are slighly cropped on the right-hand side when using my mobile browser
-* Crop/edit the SVG icons so that they fill their full canvas
-* Add attribution text for the icons
-* Add an instruction line explaining left/right mouse interactions
-* ~~Write readme~~
+- Work out why the buttons are slighly cropped on the right-hand side when using my mobile browser
+- Crop/edit the SVG icons so that they fill their full canvas
+- Add attribution text for the icons
+- Add an instruction line explaining left/right mouse interactions
+- Add icons in the ghost results cards to show which pieces of evidence are remaining?
+- Add mobile view, with smaller (shorter) buttons and non-wrapping header so more ghosts show?
+- ~~Write readme~~
 
 ## Attribution
 
-Until I cross that off the to-do list:
-* Magic Spell Book by Gerard Girbes Berges
-* Remote Control by Verry
-* sunny by Bryn Taylor
-* Temperature by arie
-* handprint by Martin Smith
-* Radio by Kiran Shastry
+Until I cross that off the to-do list (or pony up $18):
+- Magic Spell Book by Gerard Girbes Berges
+- Remote Control by Verry
+- sunny by Bryn Taylor
+- Temperature by arie
+- handprint by Martin Smith
+- Radio by Kiran Shastry
 All from the [Noun Project](https://thenounproject.com/).
