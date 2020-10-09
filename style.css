@@ -1,8 +1,7 @@
 body {
-	background-color: #5D576B;
-	width: 80wv;
+	background: #5D576B url('img/noise.png');
 	min-width: 10em;
-	max-width: 80em;
+	max-width: 70em;
 	margin: auto;
 }
 
@@ -25,13 +24,11 @@ h1 {
 }
 
 .inputs {
-	width: calc(100% - 1em - 1px);
+	width: calc(100% - 1em);
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	display: inline-grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	overflow: hidden;
-	overflow: -moz-hidden-unscrollable;
 }
 
 .input {
