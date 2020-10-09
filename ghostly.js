@@ -54,7 +54,7 @@ const ghostInformation = {
   },
   'Phantom': {
     'description': 'Phantoms are ghosts that can possess the living, most commonly summoned by a Ouija board. They can induce fear into those around them.',
-    'strength': 'Looking at Phantoms will considerably drop your sanity',
+    'strength': 'Looking at Phantoms will considerably drop your sanity.',
     'weakness': 'Taking a photo of Phantoms will make them temporarily disappear (if not hunting).',
   },
   'Poltergeist': {
@@ -74,7 +74,7 @@ const ghostInformation = {
   },
   'Spirit': {
     'description': 'Spirits are the most common ghost; however they are still very dangerous. Usually discovered after an unexplained death.',
-    'strength': 'None.',
+    'strength': 'Spirits have no special strength.',
     'weakness': 'Using smudge sticks on Spirits will stop them attacking for a long period of time.',
   },
   'Wraith': {
@@ -196,11 +196,16 @@ function renderOutput(evidence, ruledOut) {
   return ghosties(evidence, ruledOut).map((name) => {
     const gi = ghostInformation[name];
     const gc = ghostConditions[name];
+    let er = gc.filter((n) => !evidence.includes(n)).join(', ');
+
+    if (er.length === 0) {
+      er = 'You got it!';
+    }
 
     return `
     <div class=ghost>
       <h2>${name}</h2>
-      <p class="ghost_evidence">Evidence: ${gc.filter((n) => !evidence.includes(n)).join(', ')}</p>
+      <p class="ghost_evidence">Evidence: ${er}</p>
       <p class="ghost_description">${gi.description}</p>
       <p class="ghost_strength">${gi.strength}</p>
       <p class="ghost_weakness">${gi.weakness}</p>
@@ -217,6 +222,5 @@ function mount(frag, mountpoint) {
   mountpoint.appendChild(frag);
 }
 
-// f(evidence, ruledOut);
 writeHTML(renderOutput(evidence, ruledOut), results);
 mount(renderInput(possibleEvidence, evidence, ruledOut), input);
