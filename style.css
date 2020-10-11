@@ -66,18 +66,22 @@ h1 {
 	.inputs {
 		width: 100%;
 		padding: 0;
-		grid-template-columns: 1fr 1fr;
 	}
 	
 	.input {
 		background-color:#fe938c;
 		margin: 0.4em;
-		padding: 0.5em;
-		display: grid;
+		padding: 0.8em;
 	}
 
 	.input_label {
 		display: none;
+	}
+}
+
+@media (max-device-width: 100mm) and (orientation: portrait) {
+	.inputs {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
