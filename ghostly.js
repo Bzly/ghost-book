@@ -91,7 +91,7 @@ const ghostInformation = {
 
 const input = window.document.createElement('div');
 input.setAttribute('class', 'inputs');
-document.body.appendChild(input);
+document.body.getElementsByClassName('helptext')[0].before(input);
 
 const results = window.document.createElement('div');
 results.setAttribute('class', 'results');
