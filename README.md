@@ -35,13 +35,13 @@ The in-game journal also doesn't allow you to rule out pieces of evidence (occas
 
 ## To-do
 
-- Work out why the buttons are slighly cropped on the right-hand side when using my mobile browser
-- Crop/edit the SVG icons so that they fill their full canvas
+- ~~Work out why the buttons are slighly cropped on the right-hand side when using my mobile browser
+- ~~Crop/edit the SVG icons so that they fill their full canvas
 - Add attribution text for the icons
-- Add an instruction line explaining left/right mouse interactions
+- ~~Add an instruction line explaining left/right mouse interactions
 - Add icons in the ghost results cards to show which pieces of evidence are remaining?
-- Add mobile view, with smaller (shorter) buttons and non-wrapping header so more ghosts show?
-- ~~Write readme~~
+- ~~Add mobile view, with smaller (shorter) buttons and non-wrapping header so more ghosts show?
+- ~~Write readme
 
 ## Attribution
 
