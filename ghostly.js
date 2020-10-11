@@ -162,13 +162,13 @@ function inputOnclickFactory(buttonName) {
 }
 
 function string2element(s) {
-  parent = document.createElement('div');
+  const parent = document.createElement('div');
   parent.innerHTML = s;
   return parent.firstElementChild;
 }
 
 function renderInput(possibleEvidence, evidence, ruledOut) {
-  frag = document.createDocumentFragment();
+  const frag = document.createDocumentFragment();
 
   possibleEvidence.forEach((poss) => {
     let status = '';
