@@ -58,6 +58,25 @@ h1 {
 	text-align: center;
 }
 
+@media (max-device-width: 150mm) and (orientation: portrait) {
+	.inputs {
+		width: 100%;
+		padding: 0;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.input {
+		background-color:#fe938c;
+		margin: 0.4em;
+		padding: 0.5em;
+		display: grid;
+	}
+
+	.input_label {
+		display: none;
+	}
+}
+
 .ghost {
 	color: #F1DEDE;
 	margin: 2em;
@@ -84,4 +103,11 @@ p {
 
 p:last-of-type {
 	margin-bottom: 0.2em;
+}
+
+.helptext p {
+	font-size: 0.95em;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
 }
