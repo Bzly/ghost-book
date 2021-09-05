@@ -35,6 +35,7 @@ The in-game journal also doesn't allow you to rule out pieces of evidence (occas
 
 ## To-do
 
+- ~~Update with new ghost types~~
 - ~~Work out why the buttons are slighly cropped on the right-hand side when using my mobile browser~~
 - ~~Crop/edit the SVG icons so that they fill their full canvas~~
 - Add attribution text for the icons
@@ -52,5 +53,6 @@ Until I cross that off the to-do list (or pony up $18):
 - Temperature by arie
 - handprint by Martin Smith
 - Radio by Kiran Shastry
+- dots by Zach Bogart
 
 All from the [Noun Project](https://thenounproject.com/).

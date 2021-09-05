@@ -28,7 +28,7 @@ h1 {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	display: inline-grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(6, 1fr);
 }
 
 .input {
@@ -37,6 +37,23 @@ h1 {
 	padding: 1em;
 	padding-bottom: 0;
 	display: grid;
+	grid-column: span 2;
+}
+
+/* 
+Centre widowed grid elements. Maths.jpg.
+requires double span and double col count above.
+*/
+.input:last-child:nth-child(3n - 1) {
+  grid-column-end: -2;
+}
+
+.input:nth-last-child(2):nth-child(3n + 1) {
+  grid-column-end: 4;
+}
+
+.input:last-child:nth-child(3n - 2) {
+  grid-column-end: 5;
 }
 
 .input.found {

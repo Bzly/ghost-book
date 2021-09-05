@@ -3,18 +3,22 @@
 /* eslint-disable max-len */
 
 const ghostConditions = {
-  'Banshee': ['EMF Level 5', 'Fingerprints', 'Freezing Temperatures'],
-  'Demon': ['Spirit Box', 'Ghost Writing', 'Freezing Temperatures'],
-  'Jinn': ['Spirit Box', 'Ghost Orb', 'EMF Level 5'],
-  'Mare': ['Spirit Box', 'Ghost Orb', 'Freezing Temperatures'],
-  'Oni': ['EMF Level 5', 'Spirit Box', 'Ghost Writing'],
-  'Phantom': ['EMF Level 5', 'Ghost Orb', 'Freezing Temperatures'],
-  'Poltergeist': ['Spirit Box', 'Fingerprints', 'Ghost Orb'],
-  'Revenant': ['EMF Level 5', 'Fingerprints', 'Ghost Writing'],
-  'Shade': ['EMF Level 5', 'Ghost Orb', 'Ghost Writing'],
+  'Banshee': ['Ghost Orb', 'Fingerprints', 'D.O.T.S Projector'],
+  'Demon': ['Fingerprints', 'Ghost Writing', 'Freezing Temperatures'],
+  'Goryo': ['EMF Level 5', 'Fingerprints', 'D.O.T.S Projector'],
+  'Hantu': ['Fingerprints', 'Ghost Orb', 'Freezing Temperatures'],
+  'Jinn': ['Fingerprints', 'Freezing Temperatures', 'EMF Level 5'],
+  'Mare': ['Spirit Box', 'Ghost Orb', 'Ghost Writing'],
+  'Myling': ['EMF Level 5', 'Fingerprints', 'Ghost Writing'],
+  'Oni': ['EMF Level 5', 'Freezing Temperatures', 'D.O.T.S Projector'],
+  'Phantom': ['Spirit Box', 'Fingerprints', 'D.O.T.S Projector'],
+  'Poltergeist': ['Spirit Box', 'Fingerprints', 'Ghost Writing'],
+  'Revenant': ['Ghost Orb', 'Freezing Temperatures', 'Ghost Writing'],
+  'Shade': ['EMF Level 5', 'Freezing Temperatures', 'Ghost Writing'],
   'Spirit': ['Spirit Box', 'Fingerprints', 'Ghost Writing'],
-  'Wraith': ['Fingerprints', 'Freezing Temperatures', 'Spirit Box'],
-  'Yurei': ['Ghost Orb', 'Ghost Writing', 'Freezing Temperatures'],
+  'Wraith': ['EMF Level 5', 'D.O.T.S Projector', 'Spirit Box'],
+  'Yokai': ['Spirit Box', 'Ghost Orb', 'D.O.T.S Projector'],
+  'Yurei': ['Ghost Orb', 'D.O.T.S Projector', 'Freezing Temperatures'],
 };
 
 const possibleEvidence = [
@@ -24,7 +28,9 @@ const possibleEvidence = [
   'Ghost Orb',
   'Fingerprints',
   'Ghost Writing',
+  'D.O.T.S Projector',
 ];
+// [...new Set(myArray)]
 
 const ghostInformation = {
   'Banshee': {
@@ -86,6 +92,26 @@ const ghostInformation = {
     'description': 'Yurei have usually returned to the physical world for the purpose of revenge or hatred.',
     'strength': 'Yurei have been known to have a stronger effect on sanity.',
     'weakness': 'Smudging the room of a Yurei will cause it to not wander around the location for a long time.',
+  },
+  'Hantu': {
+    'description': 'Hantu are rare and found in hot colimates. They attack more often when the weather is cold.',
+    'strength': 'Hantu move faster when the temperature is lower',
+    'weakness': 'Conversely, they move slower in warmer areas',
+  },
+  'Yokai': {
+    'description': 'Yokai are a common ghost and are attracted to voices. They are usually found haunting family homes.',
+    'strength': 'Talking near a Yokai will anger it, and increase the chance it will attack.',
+    'weakness': 'When hunting, a Yokai can only hear voices close to it.',
+  },
+  'Goryo': {
+    'description': 'Goryo can only be seen via a D.O.T.S Projector using a video camera.',
+    'strength': 'Goryo will only show themselves on camera if there are no people nearby.',
+    'weakness': 'Goryo are rarely seen far from their place of death.',
+  },
+  'Myling': {
+    'description': 'Myling are very vocal and active. They are quiet when hunting their prey.',
+    'strength': 'Myling are quieter when hunting.',
+    'weakness': 'Myling more frequently make paranormal sounds.',
   },
 };
 
